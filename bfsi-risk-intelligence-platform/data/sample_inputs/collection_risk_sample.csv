@@ -1,0 +1,7 @@
+loan_amount,emi_amount,monthly_income,credit_score,past_due_days,missed_payments,loan_tenure_months,employment_type,existing_loans_count,repayment_ratio
+46926.81,1023.65,15170.64,612,4,3,351,Contractual,0,0.35
+201123.09,9458.86,74964.32,799,0,3,259,Self-employed,0,0.39
+301012.14,3903.35,14183.09,818,2,0,235,Salaried,4,0.44
+91294.26,6588.04,14353.86,674,6,2,241,Salaried,0,0.75
+131674.57,10315.71,118358.62,505,7,2,260,Salaried,4,0.19
+16959.63,5376.19,71230.61,478,2,1,77,Contractual,3,0.74

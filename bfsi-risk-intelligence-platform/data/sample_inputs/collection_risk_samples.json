@@ -1,0 +1,26 @@
+{
+  "low_priority_loan": {
+    "loan_amount": 500000,
+    "emi_amount": 5000,
+    "monthly_income": 150000,
+    "credit_score": 750,
+    "past_due_days": 0,
+    "missed_payments": 0,
+    "loan_tenure_months": 60,
+    "employment_type": "Salaried",
+    "existing_loans_count": 1,
+    "repayment_ratio": 0.05
+  },
+  "high_priority_loan": {
+    "loan_amount": 1000000,
+    "emi_amount": 50000,
+    "monthly_income": 80000,
+    "credit_score": 400,
+    "past_due_days": 45,
+    "missed_payments": 3,
+    "loan_tenure_months": 120,
+    "employment_type": "Self-employed",
+    "existing_loans_count": 3,
+    "repayment_ratio": 0.8
+  }
+}

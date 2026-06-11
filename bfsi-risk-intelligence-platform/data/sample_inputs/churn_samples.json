@@ -1,0 +1,26 @@
+{
+  "loyal_customer": {
+    "credit_score": 800,
+    "age": 45,
+    "tenure": 8,
+    "balance": 150000,
+    "number_of_products": 3,
+    "has_credit_card": 1,
+    "is_active_member": 1,
+    "estimated_salary": 200000,
+    "complaints": 0,
+    "satisfaction_score": 5
+  },
+  "at_risk_customer": {
+    "credit_score": 500,
+    "age": 30,
+    "tenure": 1,
+    "balance": 0,
+    "number_of_products": 1,
+    "has_credit_card": 0,
+    "is_active_member": 0,
+    "estimated_salary": 50000,
+    "complaints": 2,
+    "satisfaction_score": 2
+  }
+}

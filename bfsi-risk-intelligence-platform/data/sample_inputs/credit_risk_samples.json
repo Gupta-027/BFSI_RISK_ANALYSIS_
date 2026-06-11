@@ -1,0 +1,22 @@
+{
+  "low_risk_customer": {
+    "age": 45,
+    "job": "management",
+    "credit_amount": 3000,
+    "duration": 12,
+    "purpose": "car",
+    "housing": "own",
+    "saving_accounts": "rich",
+    "checking_account": "moderate"
+  },
+  "high_risk_customer": {
+    "age": 22,
+    "job": "unemployed",
+    "credit_amount": 18000,
+    "duration": 60,
+    "purpose": "business",
+    "housing": "rent",
+    "saving_accounts": "little",
+    "checking_account": "little"
+  }
+}

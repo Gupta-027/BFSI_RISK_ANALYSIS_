@@ -1,0 +1,12 @@
+BFSI Risk Intelligence Platform
+================================
+
+Logo placeholder.
+
+Drop a real logo image here (e.g. logo.png) and load it in
+frontend/components/header.py with st.image() if you want a brand mark
+in the sidebar. The current UI uses a text + emoji wordmark:
+
+    🏦 BFSI Risk
+
+Built by Gupta.

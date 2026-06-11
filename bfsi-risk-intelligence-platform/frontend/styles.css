@@ -1,0 +1,224 @@
+/* ============================================================
+   BFSI Risk Intelligence Platform - UI styles
+   A clean, enterprise light dashboard theme: white + blue.
+   Kept intentionally simple: a few reusable classes only.
+   ============================================================ */
+
+/* ---- App background ---- */
+[data-testid="stAppViewContainer"],
+.stApp {
+    background: #f6f9fe;
+}
+
+/* ---- Layout ---- */
+[data-testid="stMainBlockContainer"],
+.block-container {
+    padding-top: 2.2rem;
+    padding-bottom: 2rem;
+    max-width: 1180px;
+}
+[data-testid="stHeader"] { background: transparent; }
+#MainMenu, footer { visibility: hidden; }
+
+/* ---- Section headings ---- */
+.section-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #0f2c5c;
+    margin: 6px 0 2px;
+}
+.section-sub {
+    color: #5b6b85;
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+}
+
+/* ---- Hero ---- */
+.hero {
+    background: linear-gradient(135deg, #2563eb 0%, #3b82f6 55%, #60a5fa 100%);
+    border: 1px solid #2563eb;
+    border-radius: 18px;
+    padding: 46px 44px;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 30px rgba(37, 99, 235, 0.25);
+}
+.hero .pill {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.18);
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+.hero h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #ffffff;
+    margin: 0 0 12px;
+    letter-spacing: -0.5px;
+}
+.hero p {
+    font-size: 1.08rem;
+    color: #e8f0ff;
+    max-width: 720px;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* ---- Generic cards ---- */
+.module-card, .kpi-card, .why-card, .model-card {
+    background: #ffffff;
+    border: 1px solid #dbe6f5;
+    border-radius: 14px;
+    height: 100%;
+    box-shadow: 0 2px 10px rgba(15, 44, 92, 0.05);
+}
+
+/* Module cards (home) */
+.module-card {
+    padding: 22px;
+    transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+}
+.module-card:hover {
+    transform: translateY(-3px);
+    border-color: #2563eb;
+    box-shadow: 0 8px 22px rgba(37, 99, 235, 0.15);
+}
+.module-icon { font-size: 1.6rem; }
+.module-title { font-weight: 700; color: #0f2c5c; margin: 10px 0 6px; font-size: 1.05rem; }
+.module-desc { color: #5b6b85; font-size: 0.88rem; line-height: 1.5; }
+.module-tag {
+    display: inline-block;
+    margin-top: 14px;
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: #2563eb;
+    background: rgba(37, 99, 235, 0.1);
+    padding: 4px 10px;
+    border-radius: 6px;
+}
+
+/* KPI cards */
+.kpi-card { padding: 24px 22px; }
+.kpi-value { font-size: 1.9rem; font-weight: 800; color: #2563eb; line-height: 1.1; }
+.kpi-label { color: #5b6b85; font-size: 0.92rem; margin-top: 6px; }
+
+/* "Why BFSI" cards */
+.why-card { padding: 18px 20px; border-left: 3px solid #2563eb; }
+.why-card h4 { margin: 0 0 6px; color: #0f2c5c; font-size: 1rem; }
+.why-card p { margin: 0; color: #5b6b85; font-size: 0.86rem; line-height: 1.55; }
+
+/* ---- Risk badges ---- */
+.badge {
+    display: inline-block;
+    padding: 5px 14px;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 0.82rem;
+}
+.badge-low { background: rgba(22, 163, 74, 0.12); color: #15803d; border: 1px solid rgba(22, 163, 74, 0.35); }
+.badge-medium { background: rgba(217, 119, 6, 0.12); color: #b45309; border: 1px solid rgba(217, 119, 6, 0.35); }
+.badge-high { background: rgba(220, 38, 38, 0.12); color: #b91c1c; border: 1px solid rgba(220, 38, 38, 0.35); }
+
+/* ---- Result panel (prediction pages) ---- */
+.result-panel {
+    background: #ffffff;
+    border: 1px solid #dbe6f5;
+    border-radius: 16px;
+    padding: 26px;
+    box-shadow: 0 2px 10px rgba(15, 44, 92, 0.05);
+}
+.result-panel.placeholder {
+    text-align: center;
+    color: #8595af;
+    border-style: dashed;
+    border-color: #c2d4ee;
+    padding: 48px 26px;
+    box-shadow: none;
+}
+.result-header {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.74rem;
+    color: #5b6b85;
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+.result-prob { font-size: 3rem; font-weight: 800; line-height: 1; color: #0f2c5c; }
+.result-prob span { font-size: 1.4rem; color: #5b6b85; margin-left: 2px; }
+.result-prob-label { color: #5b6b85; font-size: 0.9rem; margin: 6px 0 18px; }
+.bar { background: #e8eef8; border-radius: 999px; height: 10px; overflow: hidden; margin-bottom: 20px; }
+.bar-fill { height: 100%; border-radius: 999px; }
+.bar-low { background: #16a34a; }
+.bar-medium { background: #d97706; }
+.bar-high { background: #dc2626; }
+.result-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-top: 1px solid #e8eef8;
+}
+.result-row .label { color: #5b6b85; font-size: 0.9rem; }
+.result-action { font-weight: 700; color: #0f2c5c; }
+.result-explain {
+    margin-top: 18px;
+    background: #eff5ff;
+    border: 1px solid #dbe6f5;
+    border-radius: 10px;
+    padding: 14px 16px;
+    color: #44546f;
+    font-size: 0.85rem;
+    line-height: 1.55;
+}
+
+/* ---- Model info cards ---- */
+.model-card { padding: 22px 24px; margin-bottom: 18px; }
+.model-card .mc-title { font-weight: 700; color: #0f2c5c; font-size: 1.1rem; }
+.model-card .mc-tag {
+    display: inline-block;
+    margin: 8px 0 14px;
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: #2563eb;
+    background: rgba(37, 99, 235, 0.1);
+    padding: 4px 10px;
+    border-radius: 6px;
+}
+.model-card p { margin: 7px 0; color: #44546f; font-size: 0.86rem; line-height: 1.5; }
+.model-card p b { color: #0f2c5c; }
+
+/* ---- Sidebar ---- */
+[data-testid="stSidebar"] { background: #ffffff; border-right: 1px solid #dbe6f5; }
+.sidebar-brand { font-weight: 800; color: #0f2c5c; font-size: 1.2rem; padding: 6px 0 0; }
+.sidebar-brand span { color: #2563eb; }
+.sidebar-tag { color: #8595af; font-size: 0.78rem; margin: 2px 0 6px; }
+.sidebar-tag b { color: #44546f; }
+
+/* ---- Buttons ---- */
+.stButton > button,
+[data-testid="stFormSubmitButton"] > button {
+    background: #2563eb;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    padding: 0.55rem 1rem;
+    box-shadow: 0 2px 8px rgba(37, 99, 235, 0.25);
+}
+.stButton > button:hover,
+[data-testid="stFormSubmitButton"] > button:hover { background: #1d4ed8; }
+
+/* ---- Footer ---- */
+.footer {
+    text-align: center;
+    color: #8595af;
+    font-size: 0.85rem;
+    padding: 26px 0 8px;
+    margin-top: 36px;
+    border-top: 1px solid #dbe6f5;
+}
+.footer b { color: #44546f; }

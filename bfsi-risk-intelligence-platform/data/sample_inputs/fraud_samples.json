@@ -1,0 +1,24 @@
+{
+  "safe_transaction": {
+    "transaction_amount": 50,
+    "transaction_hour": 10,
+    "old_balance": 5000,
+    "new_balance": 4950,
+    "merchant_risk_score": 10,
+    "device_changed": 0,
+    "location_changed": 0,
+    "is_new_beneficiary": 0,
+    "failed_attempts_last_24h": 0
+  },
+  "high_fraud_risk_transaction": {
+    "transaction_amount": 50000,
+    "transaction_hour": 3,
+    "old_balance": 60000,
+    "new_balance": 10000,
+    "merchant_risk_score": 90,
+    "device_changed": 1,
+    "location_changed": 1,
+    "is_new_beneficiary": 1,
+    "failed_attempts_last_24h": 4
+  }
+}

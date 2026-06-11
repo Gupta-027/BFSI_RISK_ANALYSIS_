@@ -1,0 +1,7 @@
+age,job,credit_amount,duration,purpose,housing,saving_accounts,checking_account
+56,services,4680,32,unknown,own,little,little
+46,technician,4482,42,car,own,rich,little
+69,retired,9070,33,unknown,other,moderate,little
+32,unemployed,11372,28,car,other,unknown,little
+28,admin,19676,67,housing,other,rich,moderate
+41,unemployed,18100,24,education,other,rich,unknown

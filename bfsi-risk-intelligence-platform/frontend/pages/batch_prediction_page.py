@@ -26,9 +26,14 @@ from frontend.components.data_table import summary_kpis, results_table
 
 
 def _step(number, title):
-    """Render a small numbered step heading."""
+    """Render a numbered step heading for the guided flow."""
     st.markdown(
-        f'<div class="section-title">Step {number}: {title}</div>',
+        f"""
+        <div class="step-head">
+            <span class="step-num">{number}</span>
+            <span class="step-text">{title}</span>
+        </div>
+        """,
         unsafe_allow_html=True,
     )
 

@@ -10,6 +10,19 @@ import streamlit as st
 from src.utils.risk_rules import classify
 
 
+def _stat_card(variant, label, value):
+    """One coloured KPI/stat card (rendered as styled HTML)."""
+    st.markdown(
+        f"""
+        <div class="stat-card is-{variant}">
+            <div class="stat-label">{label}</div>
+            <div class="stat-value">{value}</div>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+
 def summary_kpis(result_df, module_name):
     """Render five KPI cards summarising a scored batch."""
     probabilities = result_df["prediction_probability"]
@@ -21,12 +34,17 @@ def summary_kpis(result_df, module_name):
     high = levels.count("high")
     avg_prob = float(probabilities.mean()) if total else 0.0
 
-    c1, c2, c3, c4, c5 = st.columns(5)
-    c1.metric("Total Records", total)
-    c2.metric("Low Risk", low)
-    c3.metric("Medium Risk", medium)
-    c4.metric("High Risk", high)
-    c5.metric("Avg Risk Probability", f"{avg_prob:.0%}")
+    cols = st.columns(5, gap="medium")
+    cards = [
+        ("total", "Total Records", total),
+        ("low", "Low Risk", low),
+        ("medium", "Medium Risk", medium),
+        ("high", "High Risk", high),
+        ("avg", "Avg Risk Probability", f"{avg_prob:.0%}"),
+    ]
+    for col, (variant, label, value) in zip(cols, cards):
+        with col:
+            _stat_card(variant, label, value)
 
 
 def results_table(df):

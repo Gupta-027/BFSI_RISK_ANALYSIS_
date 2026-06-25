@@ -12,6 +12,17 @@ NAV_ITEMS = [
     "Model Information",
 ]
 
+# Icon shown next to each nav item (kept out of the value so routing stays clean).
+NAV_ICONS = {
+    "Home": "🏠",
+    "Credit Risk Prediction": "📊",
+    "Fraud Detection": "🚨",
+    "Customer Churn Prediction": "👥",
+    "Loan Collection Risk": "💰",
+    "Batch Prediction": "📁",
+    "Model Information": "ℹ️",
+}
+
 
 def render_sidebar():
     """Render the sidebar and return the selected page name."""
@@ -25,7 +36,12 @@ def render_sidebar():
             unsafe_allow_html=True,
         )
         st.divider()
-        page = st.radio("Navigation", NAV_ITEMS, label_visibility="collapsed")
+        page = st.radio(
+            "Navigation",
+            NAV_ITEMS,
+            format_func=lambda item: f"{NAV_ICONS.get(item, '•')} {item}",
+            label_visibility="collapsed",
+        )
         st.divider()
         st.markdown(
             '<div class="sidebar-tag">Built by <b>Gupta</b></div>',

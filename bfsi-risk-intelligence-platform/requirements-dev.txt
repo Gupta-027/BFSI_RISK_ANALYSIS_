@@ -1,0 +1,11 @@
+# Development / notebook-only dependencies.
+# NOT installed by the deployed app (keeps the cloud build lean and fast).
+# Install locally with:  pip install -r requirements.txt -r requirements-dev.txt
+
+# Visualization (for EDA notebooks)
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Jupyter Notebooks
+jupyter>=1.0.0
+ipython>=8.0.0

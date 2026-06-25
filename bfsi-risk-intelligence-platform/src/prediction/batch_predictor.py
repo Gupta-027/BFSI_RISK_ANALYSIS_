@@ -70,7 +70,7 @@ MODULES = {
         "preprocessor": COLLECTION_RISK_PREPROCESSOR,
         "risk_class": "High Priority",
         "download_name": "collection_risk_predictions.csv",
-        "sample_file": os.path.join(SAMPLE_INPUTS_DIR, "collection_sample.csv"),
+        "sample_file": os.path.join(SAMPLE_INPUTS_DIR, "collection_risk_sample.csv"),
     },
 }
 

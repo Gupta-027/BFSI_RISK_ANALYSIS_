@@ -1,0 +1,20 @@
+# Repo-root Streamlit config — THIS is the file Streamlit Community Cloud reads
+# (its working directory on the cloud is the repository root, not the app
+# subfolder). Keep in sync with bfsi-risk-intelligence-platform/.streamlit/config.toml.
+
+# Clean white + blue theme for the BFSI Risk Intelligence Platform
+[theme]
+base = "light"
+primaryColor = "#2563eb"
+backgroundColor = "#ffffff"
+secondaryBackgroundColor = "#f1f5fb"
+textColor = "#1e293b"
+font = "sans serif"
+
+[client]
+# Hide Streamlit's automatic navigation for the frontend/pages folder.
+# We build our own sidebar navigation in app.py instead.
+showSidebarNavigation = false
+
+[server]
+headless = true

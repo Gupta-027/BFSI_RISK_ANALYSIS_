@@ -8,5 +8,3 @@ frontend/components/header.py with st.image() if you want a brand mark
 in the sidebar. The current UI uses a text + emoji wordmark:
 
     🏦 BFSI Risk
-
-Built by Gupta.

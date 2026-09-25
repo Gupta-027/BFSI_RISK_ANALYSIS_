@@ -42,4 +42,9 @@ def render_sidebar():
             format_func=lambda item: f"{NAV_ICONS.get(item, '•')} {item}",
             label_visibility="collapsed",
         )
+        st.divider()
+        st.markdown(
+            '<div class="sidebar-tag">Built by <b>Gupta Prasad</b></div>',
+            unsafe_allow_html=True,
+        )
     return page
